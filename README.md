@@ -11,6 +11,14 @@ This project trains a binary sentiment classifier on movie review data using Ker
 **Deployment status:** Initially attempted deployment on **Streamlit Community Cloud**, but ran into a platform-side issue — Streamlit Cloud's build environment was using **Python 3.14**, and TensorFlow does not yet have compatible wheels for that Python version, causing dependency installation to fail. Currently working on an alternative deployment approach (e.g. Docker + Render) to resolve this.
 
 ---
+## 📊 Dataset
+
+- **Source:** IMDB Movie Reviews Dataset
+- **Size:** 50,000 reviews (typically split 25,000 train / 25,000 test)
+- **Labels:** Binary — `positive` (1) / `negative` (0)
+- **Preprocessing:** Lowercasing, HTML tag removal (e.g. `<br />` tags common in this dataset), punctuation removal
+
+---
 
 ## 🛠️ Tech Stack
 
